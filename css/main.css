@@ -141,12 +141,13 @@ body, html {
 }
 
 .about .about-inner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr minmax(400px, 1fr);
 }
 
 .about .about-inner .about-image {
-  text-align: right;
+  display: grid;
+  place-items: center;
 }
 
 .about .about-inner .about-image img {
@@ -244,6 +245,30 @@ body, html {
   font-weight: bold;
   outline: none;
   color: #002E4E;
+}
+
+.fa-react {
+  color: #155ac1;
+}
+
+.fa-sass {
+  color: #9123b5;
+}
+
+.fa-css3 {
+  color: #2f88e4;
+}
+
+.fa-html5 {
+  color: orange;
+}
+
+.fa-git-square {
+  color: #b97800;
+}
+
+.fa-node-js {
+  color: green;
 }
 
 .skills {
