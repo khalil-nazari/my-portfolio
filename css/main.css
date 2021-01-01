@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+section {
+  padding: 5rem 0 !important;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+}
+
+.container {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-area {
+  width: 100%;
+  height: 100vh;
+  background-color: #002E4E;
+  color: #fff;
+  position: relative;
+}
+
+.header-area .hero {
+  height: 90vh;
+  display: grid;
+  place-content: center;
+  color: #c1c1c1;
+}
+
+.header-area .hero .hero-text {
+  max-width: 350px;
+}
+
+.header-area .hero h3 {
+  text-align: left;
+  font-weight: 400;
+}
+
+.header-area .hero h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.header-area .hero h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.header-area .hero .moreabout {
+  display: block;
+  color: #c1c1c1;
+  border: 1px solid #094b6f;
+  padding: .5rem 1rem;
+  margin: 2rem auto 0;
+  width: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-area .hero .moreabout:hover .icon {
+  transition: transform .5s ease-in-out;
+  transform: rotateZ(90deg);
+  color: #c1c1c1;
+}
+
+.header-area .navbar {
+  display: none;
+  background-color: #002e4e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 0;
+  z-index: 2;
+}
+
+.header-area .navbar .navbar-inner {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  transition: display .5s ease;
+}
+
+.header-area .navbar .navbar-inner a {
+  color: #d1d1d1;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .7rem;
+  transition: color .5s ease;
+}
+
+.header-area .navbar .navbar-inner a :hover {
+  color: #fff;
+}
+
+.header-area .navbar .navbar-inner .icon {
+  font-size: 2rem;
+}
+
+.header-area .navbar .navbar-inner .icon-text {
+  margin-top: 5px;
+}
+
+.about {
+  padding: 3rem 0;
+}
+
+.about .about-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .about-inner .about-image {
+  text-align: right;
+}
+
+.about .about-inner .about-image img {
+  width: 80%;
+}
+
+.work-experience {
+  padding: 3rem 0;
+  background-color: #dceaf4;
+}
+
+.work-experience .work-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.work-experience .work-items .item {
+  border: 1px solid white;
+  padding: 1.5rem;
+}
+
+.work-experience .work-items .item .org {
+  margin-top: 1rem;
+  color: grey;
+}
+
+.work-experience .work-items .item .description {
+  margin-top: 1rem;
+}
+
+.projects {
+  padding: 3rem 0;
+}
+
+.projects #reactjs_projects {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  background-color: transparent;
+}
+
+.projects #reactjs_projects .swiper-slide {
+  min-width: 215px;
+  font-size: 18px;
+  box-shadow: 0 0 5px 2px #eeeeee;
+  padding-bottom: 1rem;
+  transition: transform .4s ease;
+}
+
+.projects #reactjs_projects .swiper-slide:hover {
+  transform: scale(1.02);
+}
+
+.projects #reactjs_projects .swiper-slide .project-title {
+  padding: 1rem;
+}
+
+.projects #reactjs_projects .swiper-slide .project-description {
+  padding: 0 1rem;
+  line-height: 1.8rem;
+}
+
+.projects #reactjs_projects .swiper-slide .view-btn {
+  display: block;
+  border: 1px solid #043e67;
+  border-radius: 5rem;
+  color: #043e67;
+  width: 6rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: .35rem 0;
+  margin-top: 1rem;
+  transition: background-color .5s ease;
+}
+
+.projects #reactjs_projects .swiper-slide .view-btn:hover {
+  background-color: #002E4E;
+  color: #fff;
+}
+
+.projects #reactjs_projects .swiper-button-next, .projects #reactjs_projects .swiper-button-prev {
+  top: 96%;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.projects #reactjs_projects .swiper-button-next::after, .projects #reactjs_projects .swiper-button-prev::after {
+  top: 100% !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+  color: #002E4E;
+}
+
+.skills {
+  background-color: #dceaf4;
+  padding: 3rem 0;
+}
+
+.skills .skill-items {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skills .skill-items .item .cover-bar {
+  margin-top: .4rem;
+  border: 1px solid #002E4E;
+  border-radius: 5px;
+}
+
+.skills .skill-items .item .cover-bar .inner-bar {
+  border-radius: 3px;
+  background-color: #002E4E;
+  height: 10px;
+}
+
+.education {
+  padding: 3rem 0;
+}
+
+.education .education-items {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.education .education-items .item {
+  display: flex;
+}
+
+.education .education-items .item .icon {
+  color: #1c94a0;
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+
+.education .education-items .item .org {
+  margin: .5rem 0;
+  color: grey;
+}
+
+.education .education-items .item .description {
+  line-height: 1.8;
+}
+
+.contact {
+  padding: 3rem 0;
+  background-color: #dceaf4;
+}
+
+.contact .contact-items {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact .contact-items .items {
+  display: flex;
+  align-items: center;
+}
+
+.contact .contact-items .items .icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.contact .contact-items .items .text {
+  font-size: 1.2rem;
+}
+
+.contact .contact-items .items .fa-facebook-square {
+  color: #4267B2;
+}
+
+.contact .contact-items .items .fa-linkedin {
+  color: #0e76a8;
+}
+
+.contact .contact-items .items .fa-twitter-square {
+  color: #00acee;
+}
+
+.contact .contact-items .items .fa-envelope {
+  color: #e44a4a;
+}
+
+.contact .contact-items .items .fa-phone-square {
+  color: #3da72a;
+}
+
+footer {
+  padding: 2rem;
+  color: #d8d8d8;
+  background-color: #002E4E;
+}
+
+@media (max-width: 770px) {
+  .about {
+    padding: 3.5rem 0;
+  }
+  .about .about-inner {
+    display: block;
+  }
+  .about .about-inner .about-text {
+    margin-bottom: 3rem;
+  }
+  .about .about-inner .about-image {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-area .navbar .navbar-inner .icon {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

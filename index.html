@@ -4,177 +4,437 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- buttons font -->
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
-
-    <!-- font Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 
-    <link rel="icon" 
-      type="image/png" 
-      href="./images/khali-nazari.jpg">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/fontawesome-free-5.15.1-web/css/all.min.css"> -->
 
+    <style>
+        .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+    </style>
 
-    <!-- custom style -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- title -->
-    <title>Khalil Nazari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Khalil - Portfolio</title>
 </head>
 <body>
+    <!-- header -->
+    <header class="header-area" id="header-area">
+        
+        <nav class="navbar" id="navbar">
+            <div class="container navbar-inner" id="navbar-inner">
+                <a href="#about">
+                    <i class="fa fa-house-user icon"></i>
+                    <p class="icon-text">About</p>
+                </a>
+                <a href="#wordexperience">
+                    <i class="fas fa-briefcase icon"></i>
+                    <p class="icon-text">Experience</p>
+                </a>
     
-    <header id="header">
-        <div class="container">
-            <div class="header">
-                <div class="profile-image-wrapper">
-                    <img class="profile-image" src="./images/khali-nazari.jpg" alt="">
-                </div>
-                <div class="primary-details">
-                    <h2>Hi, I'm Khalil Nazari</h2>
-                    <p>web developer</p>
-                </div>
+                <a href="#projects">
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <p class="icon-text">Projects</p>
+                </a>
+    
+                <a href="#skills">
+                    <i class="fas fa-tools icon"></i>
+                    <p class="icon-text">Skills</p>
+                </a>
+    
+                <a href="#contact">
+                    <i class="far fa-address-card icon"></i>
+                    <p class="icon-text">Contact</p>
+                </a>
             </div>
+
+            <!-- <a href="#contact">
+                <i class="fas fa-file icon"></i>
+                <p class="icon-text">Resume</p>
+            </a> -->
+
+           
+        </nav>
+
+
+        <div class="hero">
+            <div class="hero-text">
+                <h3>Hey there,</h3>
+                <h1>I'm Khalil Nazari</h1>
+                <h2>I <span id="typewriter"></span></h2>
+            </div>
+
+            <a href="#about" class="moreabout"><span class="text">View More</span> <i class="icon fas fa-arrow-right"></i></a>
         </div>
+
+        
     </header>
-    
-    <div class="container">
-       
-        <div class="link-btns">
-            <a class="p-links link-btns-active" id="home" href="#">About</a>
-            <a class="p-links" id="skills" href="#">skills</a>
-            <a class="p-links" id="education" href="#">Education</a>
-            <a class="p-links" id="works" href="#">Works</a>
-            <a class="p-links" id="contact" href="#">contact</a>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container about-inner">
+            <div class="about-text">
+                <h3 class="section-title">About</h3>
+                <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
+            </div>
+            <div class="about-image">
+                <img src="./image/programmer.svg" alt="">
+            </div>
         </div>
-       
+    </section>
 
-        <!-- main contents -->
-        <main>
-            <div class="p-body" id="home">
-                <h2 class="p-title">About Me</h2>
-                <p class="p-text">I create fun, innovative, accessible and fast websites. I try to leave every bit I code I touch more readable, modulare, performant and accessible than I found it.</p>
 
-                <p class="p-text">
-                    Beyond front-end coding chops, I’m also passionate about writing and sharing what I’ve learned both with my mates and the broader web community. I really value the ability to not only perform web development work but also help others improve their craft, because I’ve gained so much from others sharing their skills and knowledge. I’ve developed a few small projects for my clients, namely; 
-                </p>
-
-                <p class="p-text">
-                    On a team, I tend to help bring out a clearer sense of purpose and encourage clearer communication, resulting in better team work and outcome and a higher sense of satisfaction for all involved. 
-                </p>
-
-                <p class="p-text">
-                    Let's talk about how I could put my eye for detail, practice web standards and communication skills to work together.
-                </p>
-
-                <p class="p-text">
-                    Thank you for heading over and consideration. 
-                </p>
-            </div>
-
-            <div class="p-body" id="skills">
-                <h2 class="p-title">Technical Skills</h2>
-                <div class="skill-boxes">
-                    <div class="skill-box">
-                        <img src="./images/icons/js.png" class="img-icon" alt=""> <span>JavaScript</span>
-                    </div>
-                    <div class="skill-box">
-                        <img src="./images/icons/js.png" class="img-icon" alt=""> <span>ES6+</span>
-                    </div>
-                    <div class="skill-box">
-                        <img src="./images/icons/java.png" class="img-icon" alt=""> <span>Java</span>
-                    </div>
-                    <div class="skill-box">
-                        <img src="./images/icons/php.png" class="img-icon" alt=""> <span>PHP</span>
-                    </div>
-                    <div class="skill-box">
-                        <img src="./images/icons/html.png" class="img-icon" alt=""> <span>HTML5</span>
-                    </div>
-                    <div class="skill-box">
-                        <img src="./images/icons/css.png" class="img-icon" alt=""> <span>CSS3</span>
-                    </div>
+    <!-- Work Experience -->
+    <section class="work-experience" id="wordexperience">
+        <div class="container work-experience-inner">
+            <h3 class="section-title">Work Experience</h3>
+            <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
+            
+            <div class="work-items">
+                <div class="item">
+                    <h3><i class="fas fa-code"></i> Job Title</h3>
+                    <p class="org">year - company</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, vero!</p>
                 </div>
 
-                <div class="skill-boxes">
-                    <div class="skill-box">
-                        <img src="./images/icons/reactjs.png" class="img-icon" alt=""> <span>ReactJS</span></div>
-                    <div class="skill-box">
-                        <img src="./images/icons/vuejs.png" class="img-icon" alt=""> <span>VueJS</span></div>
-                    <div class="skill-box">
-                        <img src="./images/icons/ajax.png" class="img-icon" alt=""> <span>Ajax / Axios</span></div>
-                    <div class="skill-box">
-                        <img src="./images/icons/api.jpg" class="img-icon" alt=""> <span>API</span></div>
-                    <div class="skill-box">
-                        <img src="./images/icons/restapi.png" class="img-icon" alt=""> <span>REST / RESTful API</span></div>
-                    <div class="skill-box">
-                        <img src="./images/icons/jquery.png" class="img-icon" alt=""> <span>jQuery</span></div>
-                    <div class="skill-box">
-                        <img src="./images/icons/sass.png" class="img-icon" alt=""> <span>SASS</span></div>
-                    <div class="skill-box">
-                        <img src="./images/icons/bootstrap.png" class="img-icon" alt=""> <span>Bootstrap</span></div>
+                <div class="item">
+                    <h3><i class="far fa-newspaper"></i> Content Analyst</h3>
+                    <p class="org">year - company</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, vero!</p>
                 </div>
+
+
+                <div class="item">
+                    <h3><i class="fas fa-file-code"></i> Free Lancing</h3>
+                    <p class="org">year - company</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, vero!</p>
+                </div>
+
                 
-                <div class="skill-boxes">
-                    <div class="skill-box">
-                        <img src="./images/icons/git-.png" class="img-icon" alt=""> <span>Git</span>
-                    </div> 
-                    <div class="skill-box">
-                        <img src="./images/icons/git.png" class="img-icon" alt=""> <span>GitHub</span>
-                    </div> 
-                    <div class="skill-box">
-                        <img src="./images/icons/http.png" class="img-icon" alt=""> <span>HTTP</span>
-                    </div> 
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container project-inner">
+            <div>
+                <h3 class="section-title">Projects</h3>
+                <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
             </div>
 
-            <div class="p-body" id="education">
-                <h2 class="p-title">Education Background</h2>
-                <div class="p-text uni">
-                    <img class="uni-icon" src="./images/icons/lsc.jpg" alt="">
-                    <div>
-                        <p class="text-bold">Westminster International College <span class=""> - Certified by University of South Wales UK</span></p>
-                        <p class="text-muted">Bachelor of Business Administration</p>
-                        <p class="text-muted">2019 - current</p>
+
+
+            
+
+            <div class="swiper-container" id="reactjs_projects">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                      <h3 class="project-title">Project Name</h3>
+
+                      <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                      <a href="" class="view-btn">View</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+
+
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
+
+                    <h3 class="project-title">Project Name</h3>
+
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
+
+                    <a href="" class="view-btn">View</a>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+        
+    </section>
+
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div>
+                <h3 class="section-title">Skills</h3>
+                <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
+            </div>
+            <div class="skill-items">
+                <div class="item">
+                    <p><i class="fab fa-react"></i>  React JS</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 77%;"></div>
                     </div>
-                    
                 </div>
-                <div class="p-text uni">
-                    <img class="uni-icon" src="./images/icons/iium.png" alt="">
-                    <div>
-                        <p class="text-bold">International Islamic University Malaysia(IIUM)</p>
-                        <p class="text-muted"><span>Bachelor of Computer Science</span></p>
-                        <p class="text-muted">2014 - 2018</p>
+
+                <div class="item">
+                    <p><i class="fab fa-js-square"></i> JavaScript</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
                     </div>
                 </div>
-                <div class="p-text"></div>
-            </div>
 
-            <div class="p-body" id="works">
-                <h2 class="p-title">Here is my workd</h2>
-            </div>
 
-            <div class="p-body" id="contact">
-                <h2 class="p-title">Contact Detail</h2>
-                <p class="p-text">
-                    <a href="tel:+60173221032"><i class="fa fa-phone"></i></a> / 
-                    <a href="https://api.whatsapp.com/send?phone=60173221032"><i class="fa fa-whatsapp"></i></a> <span class="text-muted">+6017 --- -- 32</span>
-                </p>
-                <p class="p-text"><i class="fa fa-envelope"></i> khalil.nazari4@gmail.com</p>
-                <p class="p-text"><a href="https://www.linkedin.com/in/khalil-nazari"><i class="fa fa-linkedin"></i> LinkedIn Profile</a></p>
-                <p class="p-text"><i class="fa fa-map-marker"></i> Setiawangsa, Kuala Lumpur, Malaysia</p>
-            </div>
-        </main>
-    </div>
+                <div class="item">
+                    <p><i class="fab fa-sass"></i> SASS</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
 
-    <!-- footer if needed -->
+
+
+                <div class="item">
+                    <p><i class="fab fa-css3"></i> CSS</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <p> <i class="fab fa-git-alt"></i> Git</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="item">
+                    <p>CSS / SASS</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="item">
+                    <p>CSS / SASS</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="item">
+                    <p>CSS / SASS</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p>CSS / SASS</p>
+                    <div class="cover-bar">
+                        <div class="inner-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section class="education" id="education">
+        <div class="container education-inner">
+            <div>
+                <h3 class="section-title">Education</h3>
+                <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
+            </div>
+            
+            <div class="education-items">
+                <div class="item">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Master of Business Administartion (MBA)</h3>
+                        <p class="org">2019 - 2021 <br> Westminister International College</p>
+                        <!-- <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, vero!</p> -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Bachelore of Computer Science</h3>
+                        <p class="org">2014 - 2018 <br> International Islamic University Malaysia</p>
+                        <!-- <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, vero!</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h3 class="section-title">Contact</h3>
+            <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
+
+
+            <div class="contact-items">
+                <div class="items">
+                    <i class="fas fa-phone-square icon"></i>  
+                    <span class="text">+60173221032</span>
+                </div>
+
+                <div class="items">
+                    <i class="fas fa-envelope icon"></i> 
+                    <span class="text">khalil.deve@gmail.com</span>
+                </div>
+
+                <div class="items">
+                    <a href="#"><i class="fab fa-linkedin icon"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square icon"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square icon"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Footer -->
     <footer>
-        <p>&copy; Khalil <span id="thisYear"></span></p>
+        <div class="container">
+            &copy; Khalil Nazari
+        </div>
     </footer>
-
-    <!-- custom javascript -->
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+
+
+    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+    <script src="./js/typewriter.js"></script>
+    <script>
+        // new Typewriter('#typewriter', {
+        //     strings: ['Developer', 'Designer'],
+        //     autoStart: true,
+        //     loop: true
+        // });
+
+
+        var app = document.getElementById('typewriter');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+        //https://safi.me.uk/typewriterjs/
+        typewriter.typeString('am a Web Developer.')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('a profecient in React JS.')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('like more Front-end web development.')
+            .pauseFor(2500)
+            .start();
+
+
+
+
+            
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetHeight;
+
+            var headerarea = document.getElementById("header-area");
+            window.onscroll = function () {
+                if(headerarea.offsetHeight - window.pageYOffset <= 500) {
+                    navbar.style.display = 'block';
+                } else {
+                    navbar.style.display = 'none';
+                }
+            }
+    </script>
 </body>
 </html>
