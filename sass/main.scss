@@ -45,12 +45,15 @@ body, html {
 
 // header
 .header-area {
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     background-color:#002E4E;
     color: #fff;
     position: relative;
+ 
 
     .hero {
         height: 90vh;
@@ -75,6 +78,7 @@ body, html {
         h2 {
             font-size: 2.3rem;
             font-weight: 400;
+            height: 200px;
         }
 
         .moreabout {
@@ -107,7 +111,7 @@ body, html {
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
-        padding: 1rem 0;
+        padding: .6rem 0;
         z-index: 2;
 
         .navbar-inner {
@@ -124,14 +128,14 @@ body, html {
                 display: block;
                 text-align: center;
                 text-transform: uppercase;
-                font-size: .7rem;
+                font-size: .6rem;
                 transition: color .5s ease;
                 :hover {
                     color: #fff;
                 }
             }
             .icon {
-                font-size: 2rem;
+                font-size: 1.5rem;
                
             }
             .icon-text {
@@ -166,6 +170,7 @@ body, html {
     background-color: #dceaf4;
 
     .work-items {
+        margin-top: 2rem;
         display: grid;
         // repeat( auto-fit, minmax(250px, 1fr) );
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -396,5 +401,85 @@ footer {
                 }
             }
         }
+    }
+}
+
+
+
+
+.right_hand {
+    animation: right_hand 2s linear 1s infinite alternate;
+}
+@keyframes right_hand {
+    0% {
+        transform:  translate(-69px, -134px) rotatez(4deg);
+        transform-origin:11% 21%;
+    }
+    50% {
+        transform: translate(-43px, -100px) rotatez(4deg);
+        transform-origin: 15% 36%;
+    }
+    100% {
+        transform:  translate(-69px, -134px) rotatez(4deg);
+        transform-origin:11% 21%;
+    }
+}
+
+
+// .wp_neck {
+//     animation: wpneck 2s linear 1s infinite alternate;
+// }
+
+@keyframes wpneck {
+    from {
+        transform: translate(-67px, -65px);
+    }
+    
+    to {
+        transform: rotate(-40deg) translate(-396px, -111px);
+    }
+}
+
+
+// .wp_hair {
+//     -webkit-transform-origin-y: bottom;
+//     -webkit-transform-origin-x: center;
+//     animation: wpheair 2s linear 1s infinite alternate;
+// }
+@keyframes wpheair {
+    from {
+        transform: translate(-59px, -75px);
+    }
+    to {
+        transform: rotate(-46deg) translate(-401px, -128px);
+    }
+}
+
+// .wp_face {
+//     animation: wpface 2s linear 1s infinite alternate;;
+// }
+
+
+@keyframes wpface {
+    from {
+        transform: translate(6px, -3px);
+    }
+    to {
+        transform: translate(-77px, -41px);
+    }
+}
+
+.wp-right-leaf {
+    -webkit-transform-origin-y: bottom;
+    -webkit-transform-origin-x: center;
+    animation: rightleave 2s linear 1s infinite alternate;
+}
+
+@keyframes rightleave{
+    from {
+        transform: translate(-69px, -65px) rotate(-1deg);    
+    }
+    to {
+        transform: translate(-54px, 98px) rotate(-27deg);
     }
 }

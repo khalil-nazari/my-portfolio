@@ -6,16 +6,17 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <link rel="stylesheet" href="./js/aos/aos.css">
 
     <link rel="stylesheet" href="./css/main.css">
     <!-- <link rel="stylesheet" href="./css/fontawesome-free-5.15.1-web/css/all.min.css"> -->
 
     <style>
         .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -50,22 +51,24 @@
                     <i class="far fa-address-card icon"></i>
                     <p class="icon-text">Contact</p>
                 </a>
+
+                <a href="#contact">
+                    <i class="fas fa-file icon"></i>
+                    <p class="icon-text">Resume</p>
+                </a> 
             </div>
 
-            <!-- <a href="#contact">
-                <i class="fas fa-file icon"></i>
-                <p class="icon-text">Resume</p>
-            </a> -->
+            
 
            
         </nav>
 
 
-        <div class="hero">
+        <div class="hero" data-aos="zoom-in-down">
             <div class="hero-text">
                 <h3>Hey there,</h3>
                 <h1>I'm Khalil Nazari</h1>
-                <h2>I <span id="typewriter"></span></h2>
+                <h2>I am <span id="typewriter"></span></h2>
             </div>
 
             <a href="#about" class="moreabout"><span class="text">View More</span> <i class="icon fas fa-arrow-right"></i></a>
@@ -77,11 +80,11 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="container about-inner">
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-up">
                 <h3 class="section-title">About</h3>
                 <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
             </div>
-            <div class="about-image">
+            <div class="about-image" data-aos="fade-up">
                 <img src="./image/programmer.svg" alt="">
             </div>
         </div>
@@ -91,8 +94,8 @@
     <!-- Work Experience -->
     <section class="work-experience" id="wordexperience">
         <div class="container work-experience-inner">
-            <h3 class="section-title">Work Experience</h3>
-            <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
+            <h3 class="section-title" data-aos="fade-down">Work Experience</h3>
+            <p class="section-paragraph" data-aos="fade-down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
             
             <div class="work-items">
                 <div class="item">
@@ -122,127 +125,96 @@
     <!-- Projects -->
     <section class="projects" id="projects">
         <div class="container project-inner">
-            <div>
+            <div data-aos="fade-up">
                 <h3 class="section-title">Projects</h3>
                 <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
             </div>
 
 
 
-            
-
             <div class="swiper-container" id="reactjs_projects">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                       <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                       <h3 class="project-title">Project Name</h3>
-
                       <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
-                      <a href="" class="view-btn">View</a>
+                      <a href="#" class="view-btn">View</a>
                   </div>
-                  <div class="swiper-slide">
+
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
-                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
+                    <p class="project-description" data-aos="flip-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
                     <a href="" class="view-btn">View</a>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
                     <a href="" class="view-btn">View</a>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
                     <a href="" class="view-btn">View</a>
                   </div>
 
-
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
                     <a href="" class="view-btn">View</a>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
                     <a href="" class="view-btn">View</a>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
                     <a href="" class="view-btn">View</a>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
                     <a href="" class="view-btn">View</a>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-aos="flip-right">
                     <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg" alt="">
-
                     <h3 class="project-title">Project Name</h3>
-
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, natus? Sunt magni, nobis illum consectetur quaerat optio delectus impedit perferendis.</p>
-
                     <a href="" class="view-btn">View</a>
                   </div>
                 </div>
+
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
-
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-
         </div>
-        
     </section>
 
 
     <!-- Skills -->
     <section class="skills" id="skills">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div>
-                <h3 class="section-title">Skills</h3>
+                <h3 class="section-title ">Skills</h3>
                 <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
             </div>
-            <div class="skill-items">
+            <div class="skill-items" data-aos="fade-down">
                 <div class="item">
                     <p><i class="fab fa-react"></i>  React JS</p>
                     <div class="cover-bar">
@@ -323,13 +295,13 @@
     <!-- Education -->
     <section class="education" id="education">
         <div class="container education-inner">
-            <div>
+            <div data-aos="fade-up">
                 <h3 class="section-title">Education</h3>
                 <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
             </div>
             
             <div class="education-items">
-                <div class="item">
+                <div class="item" data-aos="fade-down">
                     <div class="icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -340,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" data-aos="fade-down">
                     <div class="icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -355,11 +327,10 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
         <div class="container">
             <h3 class="section-title">Contact</h3>
             <p class="section-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cupiditate sunt alias reprehenderit, quae pariatur autem sequi? Nam, libero eum.</p>
-
 
             <div class="contact-items">
                 <div class="items">
@@ -409,20 +380,14 @@
             loop: true
         });
         //https://safi.me.uk/typewriterjs/
-        typewriter.typeString('am a Web Developer.')
-            .pauseFor(2500)
+        typewriter.typeString('Khalil Nazari')
+            .pauseFor(500)
             .deleteAll()
-            .typeString('a profecient in React JS.')
-            .pauseFor(2500)
+            .typeString("a Web Developer")
+            .pauseFor(500)
             .deleteAll()
-            .typeString('like more Front-end web development.')
-            .pauseFor(2500)
             .start();
 
-
-
-
-            
             // Get the navbar
             var navbar = document.getElementById("navbar");
             var sticky = navbar.offsetHeight;
@@ -436,5 +401,23 @@
                 }
             }
     </script>
+
+    <script src="./js/aos/aos.js"></script>
+    <script>
+        AOS.init();
+
+        const stillItem = document.querySelector('.skill-items').children; 
+        var displayTime = 500; 
+        for(var i = 0; i < stillItem.length; i++){
+            console.log(stillItem[i])
+            // console.log(displayTime)
+            // stillItem[i].setAttribute('data-aos', "fade-left");
+            // stillItem[i].setAttribute('data-aos-duration', displayTime);
+            // displayTime  = displayTime * 2; 
+
+
+        }
+    </script>
+    
 </body>
 </html>
