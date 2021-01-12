@@ -194,6 +194,11 @@ body, html {
 .projects {
     padding: 3rem 0;
 
+    img {
+        // border: 1px solid #c7c7c7;;
+        box-shadow: 0 0 5px 2px #dadada;
+    }
+
     #reactjs_projects {
         width: 100%;
         height: 100%;
@@ -215,13 +220,18 @@ body, html {
             }
     
             .project-title {
-                padding: 1rem;
+                padding: .5rem;
+                font-size: 18px;
+                text-align: center;
+                color: #384565;
             }
     
             .project-description {
-                padding: 0 1rem;
+                padding: .5rem;
                 line-height: 1.8rem;
-                
+                line-height: 1.2rem;
+                font-size: 13px;
+                text-align: center;
             }
     
             .view-btn {
@@ -259,6 +269,20 @@ body, html {
             font-weight: bold;
             outline: none;
             color: #002E4E;
+        }
+    }
+
+    div.tags {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: .5rem 0;
+        font-size: 15px;
+        span {
+            // background-color: #dceaf4;
+            padding: 5px;
+            color: gray;
         }
     }
 }

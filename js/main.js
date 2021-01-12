@@ -4,8 +4,9 @@ var swiper = new Swiper('#reactjs_projects', {
     // init: false,
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
+      // clickable: true,
+      // dynamicBullets: true,
+      type: 'fraction',
     },
 
    

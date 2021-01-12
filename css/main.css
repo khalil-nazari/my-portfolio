@@ -184,6 +184,10 @@ body, html {
   padding: 3rem 0;
 }
 
+.projects img {
+  box-shadow: 0 0 5px 2px #dadada;
+}
+
 .projects #reactjs_projects {
   width: 100%;
   height: 100%;
@@ -205,12 +209,18 @@ body, html {
 }
 
 .projects #reactjs_projects .swiper-slide .project-title {
-  padding: 1rem;
+  padding: .5rem;
+  font-size: 18px;
+  text-align: center;
+  color: #384565;
 }
 
 .projects #reactjs_projects .swiper-slide .project-description {
-  padding: 0 1rem;
+  padding: .5rem;
   line-height: 1.8rem;
+  line-height: 1.2rem;
+  font-size: 13px;
+  text-align: center;
 }
 
 .projects #reactjs_projects .swiper-slide .view-btn {
@@ -245,6 +255,20 @@ body, html {
   font-weight: bold;
   outline: none;
   color: #002E4E;
+}
+
+.projects div.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: .5rem 0;
+  font-size: 15px;
+}
+
+.projects div.tags span {
+  padding: 5px;
+  color: gray;
 }
 
 .fa-react {
