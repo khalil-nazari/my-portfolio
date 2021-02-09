@@ -23,49 +23,37 @@
     <title>Khalil - Portfolio</title>
 </head>
 <body>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            
+            <div class="toggle-btn">
+                <button class="nav-btn" id="nav-btn"><i class="fa fa-bars"></i></button>
+            </div>
+
+            <ul class="nav" id="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#wordexperience">Experience</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>            
+    </nav>
+
+
     <!-- header -->
     <header class="header-area" id="header-area">
-        <nav class="navbar" id="navbar">
-            <div class="container navbar-inner" id="navbar-inner">
-                <a href="#about">
-                    <i class="fa fa-house-user icon"></i>
-                    <p class="icon-text">About</p>
-                </a>
-                <a href="#wordexperience">
-                    <i class="fas fa-briefcase icon"></i>
-                    <p class="icon-text">Experience</p>
-                </a>
-    
-                <a href="#projects">
-                    <i class="fas fa-graduation-cap icon"></i>
-                    <p class="icon-text">Projects</p>
-                </a>
-    
-                <a href="#skills">
-                    <i class="fas fa-tools icon"></i>
-                    <p class="icon-text">Skills</p>
-                </a>
-    
-                <a href="#contact">
-                    <i class="far fa-address-card icon"></i>
-                    <p class="icon-text">Contact</p>
-                </a>
-
-                <a href="./khalil-resume.pdf" target="_blank">
-                    <i class="fas fa-file icon"></i>
-                    <p class="icon-text">Resume</p>
-                </a> 
+        
+        <div class="container bunner-row">
+            <div class="bunner-text">
+                <h1 class="responsive-header">I'm Khalil Nazari</h1>
+                <h3>Web Developer <span>Front-end Developer</span>, <span>ReactJS Developer</span></h3>
             </div>
-        </nav>
+        </div>
 
-        <div class="hero" data-aos="fade-up">
-            <div class="hero-text">
-                <h3>Hey there,</h3>
-                <h1>I'm Khalil Nazari</h1>
-                <h4>Web Developer</h4>
-            </div>
-
-            <a href="#about" class="moreabout"><span class="text">View More</span> <i class="icon fas fa-arrow-right"></i></a>
+        <div class="view_more">
+            <a href="#about"><i class="fas fa-arrow-down"></i></a>
         </div>
     </header>
 
@@ -478,18 +466,7 @@
         //     .deleteAll()
         //     .start();
 
-            // Get the navbar
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetHeight;
-
-            var headerarea = document.getElementById("header-area");
-            window.onscroll = function () {
-                if(headerarea.offsetHeight - window.pageYOffset <= 500) {
-                    navbar.style.display = 'block';
-                } else {
-                    navbar.style.display = 'none';
-                }
-            }
+        
     </script>
 
     <script src="./js/aos/aos.js"></script>
@@ -499,7 +476,7 @@
         const stillItem = document.querySelector('.skill-items').children; 
         var displayTime = 500; 
         for(var i = 0; i < stillItem.length; i++){
-            console.log(stillItem[i])
+            // console.log(stillItem[i])
             // console.log(displayTime)
             // stillItem[i].setAttribute('data-aos', "fade-left");
             // stillItem[i].setAttribute('data-aos-duration', displayTime);
